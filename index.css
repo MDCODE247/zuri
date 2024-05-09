@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  font: 400 normal 20px "Poetsen One", sans-serif;
+}
+
+:root {
+  --pageBg: #ffffff;
+  --calcBg: #f2f2f2;
+  --dsplyBg: #e0e0e0;
+  --dsplyBrdr: #333333;
+  --btnBg: #333333;
+  --txtClr: #000000;
+}
+
+body,
+html {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--pageBg);
+}
+
+#calcBody {
+  color: var(--txtClr);
+  background-color: var(--calcBg);
+  border: 3px solid black;
+  width: 300px;
+  justify-content: center;
+  border-radius: 50px;
+}
+
+#display {
+  font-size: 46px;
+  border: 3px solid var(--dsplyBrdr);
+  background-color: var(--dsplyBg);
+  height: 150px;
+  padding: 70px 10px 0px 10px;
+  margin: 10px;
+  margin-bottom: 20px;
+  text-align: right;
+  border-radius: 40px;
+}
+
+button {
+  margin-right: 10px;
+  margin-bottom: 12px;
+  border-radius: 50px;
+}
+
+#buttons {
+  width: 279px;
+  height: 302px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.btn {
+  width: 50px;
+  height: 50px;
+  border: none;
+}
+
+.top-btns,
+.mid-btns,
+.bot-btns {
+  margin-left: 15px;
+}
+
+#clear,
+#equals {
+  width: 115px;
+  background-color: #008b56;
+  color: #ffffff;
+}
+
+/* Style for operator, decimal, and backspace buttons */
+.operateBtn,
+#decimal,
+#backspace {
+  background-color: #383838;
+  color: #ffffff;
+}
+
+/* Style for number buttons */
+.numBtn {
+  border: 1px solid #000000;
+  background-color: #f2f2f2;
+  color: #000000;
+}
+
+/* Style for clear and equals buttons */
+#clear:hover,
+#equals:hover {
+}
+
+/* Style for operator, decimal, and backspace buttons */
+.operateBtn:hover,
+#decimal:hover,
+#backspace:hover {
+}
+
+/* Style for number buttons */
+.numBtn:hover {
+}
+
+.link{
+position: relative;
+bottom:260px;
+/* margin-right: 5px;
+bottom:5px; */
+}
